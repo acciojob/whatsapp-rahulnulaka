@@ -8,7 +8,6 @@ import java.util.List;
 
 @Service
 public class WhatsappService {
-    @Autowired
     WhatsappRepository whatsappRepository=new WhatsappRepository();
 
     public String createUser(String name, String mobile) throws Exception{
