@@ -27,7 +27,7 @@ public class WhatsappRepository {
         this.messageId = 0;
     }
 
-    public String createUser(String name, String mobile) throws Exception{
+    public String saveUser(String name, String mobile) throws Exception{
         if(!userMobile.containsKey(mobile)){
             User user=new User(name,mobile);
             userMobile.put(mobile,user);
